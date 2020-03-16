@@ -59,18 +59,46 @@
           <h2>Plan <span>laboratorium</span></h2>
           <p class="lead">
           <ol>
-            <li>Włączyć komputer</li>
-            <li>Zrobić zadania</li>
-            <li>Wyłączyć komputer</li>
+            <li>Przygotowanie środowisko do pracy. Instalacja <span>nasm</span> na serwerze Taurus.</li>
+            <li>Pobranie przygotowanego programu Hello World. Kompilacja, linkowanie oraz uruchomienie w celu sprawdzenia poprawnej konfiguracji środowiska.</li>
+            <li>Wykonanie zadań przygotowanych przez Klaudię Fil.</li>
+            <li>Wykonanie zadań przygotowanych przez Damiana Płóciennika.</li>
           </ol>
           </p>
         </div>
         <div class="center wow fadeInDown">
+          <h2>Instalacja <span>nasm</span> na serwerze Taurus</h2>
+            <p class="lead">
+              <ol>
+                <li>Pobierz paczkę ze strony <a style="font-weight: bold;" href="https://www.nasm.us/pub/nasm/releasebuilds/2.14.02/nasm-2.14.02.tar.bz2">nasm-2.14.02.tar.bz2</a>.</li>
+                <li>Rozpakuj ją w wybranym przez siebie miejscu. Możesz użyć do tego polecenia <b>tar xvjf nasm-2.14.02.tar.bz2</b>.</li>
+                <li>Przejdź do wypakowanego katalogu i ustaw miejsce instalacji przy użyciu polecenia <b>./configure --prefix=/home/stud2017/7plociennik/nazwa_katalogu</b>.</li>
+                <li>Wykonaj polecenie <b>make</b>.</li>
+                <li>Wykonaj polecenie <b>make install</b>.</li>
+                <li>Gotowe!</li>
+              </ol>
+            </p>
+        </div>
+        <div class="center wow fadeInDown">
+          <h2>Proces  <span>kompilacji</span> i konsolidacji</h2>
+            <p class="lead">
+              <h3>Kompilacja</h3>
+              <b>nasm -f elf64 nazwa.asm -o nazwa.o</b>
+              <h3>Konsolidacja (linkowanie)</h3>
+              <b>ld nazwa.o -o nazwa</b>
+              <h3>Uruchomienie programu</h3>
+              <b>./nazwa</b>
+            </p>
+        </div>
+        <div class="center wow fadeInDown">
         <h2>Zadania <span>do rozwiązania</span></h2>
           <p class="lead">
-          1. Napisać system operacyjny lepszy niż CentOS
+            <ol>
+              <li>Napisz program Assembly x86-64, który spyta się o imię i przywita z Tobą. - Klaudia</li>
+              <li>Napisz program Assembly x86-64, który sprawdza, czy dana liczba (może być umieszczona w kodzie) jest liczbą pierwszą. - Klaudia</li>
+              <li>(dodatkowe) Napisz program Assembly x86-64, który wypisze wszystkie dzielniki danej liczby (liczba może być umieszczona w kodzie). - Klaudia</li>
+            </ol>
           </p>
-        
       </div>
         </div>
     <!--/.container-->
