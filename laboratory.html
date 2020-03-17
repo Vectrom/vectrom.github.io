@@ -63,9 +63,21 @@
             <li>Pobranie przygotowanego programu Hello World. Kompilacja, linkowanie oraz uruchomienie w celu sprawdzenia poprawnej konfiguracji środowiska.</li>
             <li>Wykonanie zadań przygotowanych przez Klaudię Fil.</li>
             <li>Wykonanie zadań przygotowanych przez Damiana Płóciennika.</li>
+            <li>Pytania od uczestników zajęć.</li>
           </ol>
           </p>
         </div>
+        <div class="center wow fadeInDown">
+          <h2>Cenne <span>uwagi</span></h2>
+          <p class="lead">
+          <ul>
+            <li>Przed każdym zadaniem będzie odbywało się wprowadzenie przez osobę odpowiedzialną za dane zadanie.</li>
+            <li>Celem zajęć jest zapoznanie z asemblerem dla systemów 64 bitowych oraz nauka czytania i pisania poprawnego kodu asembly. Zastosowania takie jak deasemblacja, debugowanie, zastowanie narzędzi BinUtils są tematyką innych zajęć, na których wiedza nabyta w czasie tych zajęć może okazać się niezbędna.</li>
+            <li>W przypadku problemów z wykonaniem ćwiczenia zaleca się użycie debuggera <span>gdb</span> oraz uzyskanie pomocy od osób prowadzących.</li>
+          </ul>
+          </p>
+        </div>
+        
         <div class="center wow fadeInDown">
           <h2>Instalacja <span>nasm</span> na serwerze Taurus</h2>
             <p class="lead">
@@ -94,9 +106,11 @@
         <h2>Zadania <span>do rozwiązania</span></h2>
           <p class="lead">
             <ol>
-              <li>Napisz program Assembly x86-64, który spyta się o imię i przywita z Tobą. - Klaudia</li>
-              <li>Napisz program Assembly x86-64, który sprawdza, czy dana liczba (może być umieszczona w kodzie) jest liczbą pierwszą. - Klaudia</li>
-              <li>(dodatkowe) Napisz program Assembly x86-64, który wypisze wszystkie dzielniki danej liczby (liczba może być umieszczona w kodzie). - Klaudia</li>
+              <li>Napisz program w Assembly x86-64, który spyta się o imię i przywita z Tobą. - <span style="font-weight: bold;">Klaudia</span></li>
+              <li>Napisz program w Assembly x86-64, który sprawdza, czy dana liczba (może być umieszczona w kodzie) jest liczbą pierwszą. -  <span style="font-weight: bold;">Klaudia</span></li>
+              <li>(dodatkowe) Napisz program Assembly x86-64, który wypisze wszystkie dzielniki danej liczby (liczba może być umieszczona w kodzie). -  <span style="font-weight: bold;">Klaudia</span></li>
+              <br /><li>Zaimplementuj algorytm wyszukiwania binarnego uzupełniając funkcję find w <a href="src/find.asm">załączonym pliku</a>. Funkcja powinna mieć możliwość wywołania z poziomu języka C, zgodnie z konwencją wywołań specyficzną dla architektury AMD64 (parametry są przekazywane kolejno w rejestrach: RDI, RSI, RDX, RCX, R8, R9 a następnie na stosie; wartość zwracana: w rejestrze RAX). Kod testujący poprawne wykonane ćwiczenia znajduje się <a href="src/test_find.c">tutaj</a>. -  <span style="font-weight: bold;">Damian</li>
+              <li>Napisz funkcję odwracającą kolejność elementów w tablicy z wykorzystaniem wstawek asemblerowych w języku C++. Następnie napisz drugą funkcję robiącą to samo w&nbsp;pełni języku C++. Zmierz i porównaj czasy wykonywaniu obu funkcji. Sprawdź rezultaty dla różnych poziomów optymalizacji. -  <span style="font-weight: bold;">Damian</li>
             </ol>
           </p>
       </div>
